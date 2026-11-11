@@ -59,7 +59,10 @@
 
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  
+<link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+<script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+  
 </head>
 
 <body>
@@ -75,6 +78,7 @@
       scrollWheelZoom: false,
       tap: false
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
+    L.control.polylineMeasure().addTo(map);
   </script>
 
   <script type="text/javascript" src="./google-doc-url.js"></script>
