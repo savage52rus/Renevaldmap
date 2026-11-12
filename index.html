@@ -73,11 +73,13 @@
 
   <script type="text/javascript">
     var map = L.map('map', {
+      crs: L.CRS.Simple,
+      minZoom: -2
       attributionControl: false,
       zoomControl: false,
       scrollWheelZoom: false,
       tap: false
-    }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
+    }).setView([500,500], 0); // default center is overridden by Google Sheet options and points
     L.control.polylineMeasure({ position: 'topright' }).addTo(map);
   </script>
 
